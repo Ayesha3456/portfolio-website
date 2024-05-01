@@ -240,7 +240,7 @@ profile-photo .img{
 .education-content .row{
   display: flex;
   border-radius: 5px;
-  height: 450px;
+  height: 490px;
   justify-content: space-around;
 }
 
@@ -273,7 +273,7 @@ profile-photo .img{
   border-radius: 10px;
   width: 100%;
   position: relative;
-  height: 400px;
+  height: 420px;
 }
 .education-content .row .timeline-item{
   position:relative;
