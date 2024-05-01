@@ -260,6 +260,8 @@ profile-photo .img{
   font-size:24px;
   margin-bottom: 30px;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
 .education-content .row.timeline-box{
   flex:0 0 100%;
@@ -374,7 +376,7 @@ profile-photo .img{
   margin: 20px 0;
 }
 .project p{
-  text-align: justify;
+  text-align: left;
 }
 .project:hover{
   border-color: #fed700;
@@ -532,4 +534,54 @@ profile-photo .img{
     margin-bottom: 30px;
   }
 
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+  .navbar li {
+      margin-bottom: 10px;
+  }
+  .menu_icon {
+      display: block;
+  }
+  .header {
+      justify-content: space-between;
+  }
+  .profile-text {
+      text-align: center;
+  }
+  .about-content,
+  .about-skills {
+      text-align: center;
+  }
+  .education,
+  .education-content,
+  .project-content,
+  .contact-content {
+      padding: 20px 10px;
+  }
+  .project,
+  .timeline-item {
+      text-align: center;
+  }
+  .footer {
+      text-align: center;
+      padding: 20px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+  /* Adjustments for even smaller screens */
+  .profile-text {
+      font-size: 14px;
+  }
+  .project p {
+      font-size: 14px;
+  }
 }
