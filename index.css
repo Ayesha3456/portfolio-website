@@ -189,7 +189,7 @@ profile-photo .img{
 }
 .about-content ul {
   color:#fff;
-  text-align: justify;
+  text-align: left;
 }
 
 .about-content ul li {
@@ -274,7 +274,7 @@ profile-photo .img{
   border-radius: 10px;
   width: 100%;
   position: relative;
-  height: 355px;
+  height: 400px;
 }
 .education-content .row .timeline-item{
   position:relative;
