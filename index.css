@@ -10,17 +10,22 @@ body {
 .header-area {
   background: #000;
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 .navbar a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
 }
+.navbar a.active,
 .navbar a:hover {
   color: #fed700;
 }
@@ -35,37 +40,36 @@ body {
   gap: 3rem;
 }
 .profile-photo img {
-  width: 260px;
-  height: 260px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
-  border: 5px solid #fed700;
+  border: 4px solid #fed700;
   object-fit: cover;
 }
 .profile-text {
   flex: 1;
   max-width: 600px;
+  text-align: left;
 }
 .profile-text h5 {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-bottom: 8px;   /* FIX overlap */
-  line-height: 1.4;
+  font-size: 1.3rem;
+  color: #aaa;
+  margin: 0 0 10px 0;
 }
 .profile-text h1 {
   font-size: 3rem;
   color: #fed700;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  margin: 0 0 20px 0;
 }
 .profile-text p {
   font-size: 1rem;
-  color: #ccc;
+  color: #ddd;
   line-height: 1.7;
   margin-bottom: 20px;
 }
 .btn-group .btn {
   display: inline-block;
-  margin-right: 10px;
+  margin: 5px;
   padding: 10px 20px;
   background: #fed700;
   color: #000;
@@ -82,32 +86,22 @@ body {
 .social a {
   margin-right: 15px;
   color: #fed700;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
-/* About Section */
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem;
-  padding: 3rem 2rem;
-}
-.about-content {
-  flex: 2;
-}
-.about-skills {
-  flex: 1;
-  background: #111;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #333;
-}
-
-/* Education */
-.edu-grid {
-  display: flex;
-  gap: 2rem;
+/* Responsive */
+@media (max-width: 768px) {
+  .FirstElement {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-text h1 {
+    font-size: 2.2rem;
+  }
+  .profile-text h5 {
+    font-size: 1rem;
+  }
+}  gap: 2rem;
   padding: 3rem 2rem;
   flex-wrap: wrap;
 }
