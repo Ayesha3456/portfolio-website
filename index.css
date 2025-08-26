@@ -48,17 +48,20 @@ body {
 .profile-text h5 {
   font-size: 1.2rem;
   color: #ccc;
-  margin-bottom: 10px;
+  margin-bottom: 8px;   /* FIX overlap */
+  line-height: 1.4;
 }
 .profile-text h1 {
   font-size: 3rem;
   color: #fed700;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 .profile-text p {
   font-size: 1rem;
   color: #ccc;
   line-height: 1.7;
+  margin-bottom: 20px;
 }
 .btn-group .btn {
   display: inline-block;
@@ -174,6 +177,12 @@ body {
   .FirstElement {
     flex-direction: column;
     text-align: center;
+  }
+  .profile-text h1 {
+    font-size: 2.2rem;
+  }
+  .profile-text h5 {
+    font-size: 1rem;
   }
   .about {
     flex-direction: column;
