@@ -3,234 +3,141 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayesha M</title>
-  <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png" />
-  <link rel="stylesheet" href="index.css" />
+  <title>Ayesha M - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-  <!-------------------------- Header -------------------------->
+  <!-------------------- Navbar -------------------->
   <header class="header-area">
     <div class="container">
-      <div class="header">
-        <ul class="navbar">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </div>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-------------------------- Home Section -------------------------->
+  <!-------------------- Hero Section -------------------->
   <section class="FirstElement" id="home">
     <div class="profile-photo">
-      <img src="AyeshaM.jpg" alt="profile picture" />
+      <img src="AyeshaM.jpg" alt="Ayesha M">
     </div>
     <div class="profile-text">
-      <h5>Hi, I'm</h5>
+      <h5>Hello, I’m</h5>
       <h1>Ayesha M</h1>
       <p>
-        A passionate Software Engineer with expertise in Angular, SQL, Power BI, and Tableau.  
-        Skilled in creating scalable web applications, dashboards, and modern UI solutions.  
-        Constantly learning and pushing boundaries to deliver user-friendly, innovative products.
+        A Software Engineer with 1.8 years of IT experience specializing in Angular, HTML, SCSS, and Bootstrap.
+        I have hands-on expertise in building user-friendly applications and dashboards. My background also includes
+        experience in SQL, Power BI, and Tableau for data analysis and visualization. I am passionate about solving
+        problems, creating impactful solutions, and continuously learning new technologies.
       </p>
-    </div>
-  </section>
-
-  <!-------------------------- About Section -------------------------->
-  <section class="about-area" id="about">
-    <div class="container">
-      <div class="about">
-        <div class="about-content">
-          <h4>About Me</h4>
-          <ul>
-            <li>Software Engineer with 1.8 years of IT experience in frontend and data analytics.</li>
-            <li>Proficient in Angular, HTML, SCSS, Bootstrap, and JavaScript.</li>
-            <li>Hands-on with SQL, Tableau, and Power BI for real-time insights and dashboards.</li>
-            <li>Believer in continuous learning and delivering high-quality, scalable applications.</li>
-          </ul>
-        </div>
-        <div class="about-skills">
-          <ul>
-            <li>Name: Ayesha M</li>
-            <li>From: India</li>
-            <li>Total Experience: 2.8 Years</li>
-            <li>IT Experience: 1.8 Years</li>
-            <li>Availability: Full-time</li>
-          </ul>
-        </div>
+      <div class="btn-group">
+        <a href="AyeshaMResume.pdf" class="btn active">Download CV</a>
+        <a href="mailto:amruthanisha04@gmail.com" class="btn">Contact</a>
+      </div>
+      <div class="social">
+        <a href="mailto:amruthanisha04@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ayesha-m-softwaredeveloper/"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
   </section>
 
-  <!-------------------------- Education -------------------------->
+  <!-------------------- About Section -------------------->
+  <section class="about-area" id="about">
+    <div class="container about">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <ul>
+          <li>Software Engineer with 1.8 years of IT experience in Angular, HTML, SCSS, and Bootstrap.</li>
+          <li>Experience in creating dashboards and reports using Power BI and Tableau.</li>
+          <li>Strong SQL skills for data analysis and business reporting.</li>
+          <li>Passionate about problem-solving, continuous learning, and building scalable applications.</li>
+        </ul>
+      </div>
+      <div class="about-skills">
+        <ul>
+          <li><b>Name:</b> Ayesha M</li>
+          <li><b>From:</b> India</li>
+          <li><b>Total Experience:</b> 2.8 Years</li>
+          <li><b>IT Experience:</b> 1.8 Years</li>
+          <li><b>Availability:</b> Full-time</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------- Education -------------------->
   <section class="education-content" id="education">
     <div class="container">
-      <h3 class="title">Education</h3>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="circle-dot"></div>
-          <h3>M.Sc - Applied Mathematics</h3>
-          <h4>SDNB Vaishnav College, Chennai</h4>
-          <h4><i class="fa fa-calendar"></i> 2017-2021</h4>
+      <div class="edu-grid">
+        <div class="edu-col">
+          <h3>Education</h3>
+          <p><b>M.Sc - Applied Mathematics</b><br>SDNB Vaishnav College For Women, Chennai (2017 - 2021)</p>
+          <p><b>B.Sc - Mathematics</b><br>Aurora's Degree College, Telangana (2014 - 2017)</p>
         </div>
-        <div class="timeline-item">
-          <div class="circle-dot"></div>
-          <h3>B.Sc - Mathematics</h3>
-          <h4>Aurora's College, Telangana</h4>
-          <h4><i class="fa fa-calendar"></i> 2014-2017</h4>
+        <div class="edu-col">
+          <h3>Work Experience</h3>
+          <p><b>Software Engineer</b><br>Beinex Consulting Pvt Ltd, Kochi (09/2022 - 05/2024)</p>
+          <p><b>Acquisition Process Officer</b><br>IDFC FIRST Bank, Chennai (2019 - 2020)</p>
+        </div>
+        <div class="edu-col">
+          <h3>Internships</h3>
+          <p><b>Full Stack Web Development Intern</b><br>Beinex Consulting Pvt Ltd, Kochi (06/2022 - 08/2022)</p>
+          <p><b>ICT Engineer Intern</b><br>BSNL, Chennai (11/2018 - 01/2019)</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-------------------------- Projects -------------------------->
+  <!-------------------- Projects -------------------->
   <section class="project-content" id="projects">
     <div class="container">
-      <div class="project-title">
-        <h4>My Projects</h4>
-        <p>Grouped by Technology</p>
+      <h2 class="project-title">MY PROJECTS</h2>
+      <p class="subtitle">Showcasing Angular, SQL, Power BI, and Tableau Projects</p>
+
+      <h3>Angular Projects</h3>
+      <div class="projects">
+        <div class="project"><h4>Notes App With Authentication</h4><p>Built using Angular & Local Storage with login, signup, and notes management features.</p></div>
+        <div class="project"><h4>Student Profile Management System</h4><p>Manages student personal, educational, and course details using Angular.</p></div>
+        <div class="project"><h4>Blog Management App</h4><p>CRUD operations for blogs with a clean UI built in Angular.</p></div>
+        <div class="project"><h4>E-Commerce Store</h4><p>Angular e-commerce application with product catalog, cart, and order management.</p></div>
+        <div class="project"><h4>Expense Tracker Dashboard</h4><p>Track expenses visually with local storage integration and dynamic charts.</p></div>
+        <div class="project"><h4>Calculator App</h4><p>A simple Angular calculator performing basic arithmetic operations.</p></div>
+        <div class="project"><h4>Portfolio Website</h4><p>Personal portfolio built with Angular, HTML, CSS to showcase skills and projects.</p></div>
       </div>
 
-      <!-- Angular Projects -->
-      <h3 class="category-title">🔹 Angular Projects</h3>
+      <h3>SQL Projects</h3>
       <div class="projects">
-        <div class="project"><i class="fa fa-lock"></i>
-          <h4>Notes App with Authentication</h4>
-          <p>Secure notes app using Angular & local storage authentication.</p>
-        </div>
-        <div class="project"><i class="fa fa-graduation-cap"></i>
-          <h4>Student Profile Management System</h4>
-          <p>Manage student profiles, courses, and history with Angular.</p>
-        </div>
-        <div class="project"><i class="fa fa-pencil"></i>
-          <h4>Blog Management App</h4>
-          <p>Blog platform with CRUD and Quill editor integration.</p>
-        </div>
-        <div class="project"><i class="fa fa-store"></i>
-          <h4>E-commerce Store</h4>
-          <p>Angular store with cart, product catalog, and checkout.</p>
-        </div>
-        <div class="project"><i class="fa fa-chart-bar"></i>
-          <h4>Expense Tracker Dashboard</h4>
-          <p>Visual expense tracker with Angular & TypeScript charts.</p>
-        </div>
-        <div class="project"><i class="fa fa-calculator"></i>
-          <h4>Calculator App</h4>
-          <p>Responsive Angular calculator with modern UI.</p>
-        </div>
+        <div class="project"><h4>Amazon Sales Analysis</h4><p>Analyzed sales dataset using SQL queries to generate revenue insights.</p></div>
+        <div class="project"><h4>Coursera Data Analysis</h4><p>SQL-based analysis of course enrollment and completion rates.</p></div>
+        <div class="project"><h4>Library Usage Analysis</h4><p>Designed queries for student borrowing trends and library usage reports.</p></div>
+        <div class="project"><h4>Blinkit Sales Analysis</h4><p>Retail sales performance analysis using advanced SQL joins and aggregations.</p></div>
       </div>
 
-      <!-- SQL Projects -->
-      <h3 class="category-title">🔹 SQL Projects</h3>
+      <h3>Tableau Projects</h3>
       <div class="projects">
-        <div class="project"><i class="fa fa-database"></i>
-          <h4>Supermarket Management System</h4>
-          <p>Inventory & sales system using VB6 with MS Access backend.</p>
-        </div>
+        <div class="project"><h4>Airline Passenger Satisfaction Dashboard</h4><p>Interactive Tableau dashboard analyzing passenger reviews and satisfaction KPIs.</p></div>
+        <div class="project"><h4>HR Analytics Dashboard</h4><p>Visualized employee attrition, performance, and demographics.</p></div>
       </div>
 
-      <!-- Tableau Projects -->
-      <h3 class="category-title">🔹 Tableau Projects</h3>
+      <h3>Power BI Projects</h3>
       <div class="projects">
-        <div class="project"><i class="fa fa-chart-line"></i>
-          <h4>Sales Dashboard</h4>
-          <p>Interactive Tableau dashboard tracking sales and KPIs.</p>
-        </div>
-      </div>
-
-      <!-- Power BI Projects -->
-      <h3 class="category-title">🔹 Power BI Projects</h3>
-      <div class="projects">
-        <div class="project"><i class="fa fa-chart-pie"></i>
-          <h4>HR Analytics Dashboard</h4>
-          <p>Employee attrition and performance insights with Power BI.</p>
-        </div>
-      </div>
-
-      <!-- Portfolio -->
-      <h3 class="category-title">🔹 Portfolio</h3>
-      <div class="projects">
-        <div class="project"><i class="fa fa-id-card"></i>
-          <h4>Portfolio Website</h4>
-          <p>Personal portfolio showcasing projects, education & experience.</p>
-        </div>
+        <div class="project"><h4>Student Performance Dashboard</h4><p>Power BI dashboard to analyze student scores, attendance, and trends.</p></div>
+        <div class="project"><h4>Sales Overview Dashboard</h4><p>Sales performance insights with KPIs and filters for business decisions.</p></div>
       </div>
     </div>
   </section>
 
-  <!-------------------------- Footer -------------------------->
+  <!-------------------- Footer -------------------->
   <footer class="footer">
-    <small class="message">Thanks for visiting and happy coding!</small>
-    <small class="copyright">&copy; 2024 Ayesha M. All rights reserved.</small>
-  </footer>
-</body>
-</html>        </div>
-        <div class="project"><i class="fa fa-pencil"></i>
-          <h4>Blog Management App</h4>
-          <p>Blog platform with CRUD and Quill editor integration.</p>
-        </div>
-        <div class="project"><i class="fa fa-store"></i>
-          <h4>E-commerce Store</h4>
-          <p>Angular store with cart, product catalog, and checkout.</p>
-        </div>
-        <div class="project"><i class="fa fa-chart-bar"></i>
-          <h4>Expense Tracker Dashboard</h4>
-          <p>Visual expense tracker with Angular & TypeScript charts.</p>
-        </div>
-        <div class="project"><i class="fa fa-calculator"></i>
-          <h4>Calculator App</h4>
-          <p>Responsive Angular calculator with modern UI.</p>
-        </div>
-      </div>
-
-      <!-- SQL Projects -->
-      <h3 class="category-title">🔹 SQL Projects</h3>
-      <div class="projects">
-        <div class="project"><i class="fa fa-database"></i>
-          <h4>Supermarket Management System</h4>
-          <p>Inventory & sales system using VB6 with MS Access backend.</p>
-        </div>
-      </div>
-
-      <!-- Tableau Projects -->
-      <h3 class="category-title">🔹 Tableau Projects</h3>
-      <div class="projects">
-        <div class="project"><i class="fa fa-chart-line"></i>
-          <h4>Sales Dashboard</h4>
-          <p>Interactive Tableau dashboard tracking sales and KPIs.</p>
-        </div>
-      </div>
-
-      <!-- Power BI Projects -->
-      <h3 class="category-title">🔹 Power BI Projects</h3>
-      <div class="projects">
-        <div class="project"><i class="fa fa-chart-pie"></i>
-          <h4>HR Analytics Dashboard</h4>
-          <p>Employee attrition and performance insights with Power BI.</p>
-        </div>
-      </div>
-
-      <!-- Portfolio -->
-      <h3 class="category-title">🔹 Portfolio</h3>
-      <div class="projects">
-        <div class="project"><i class="fa fa-id-card"></i>
-          <h4>Portfolio Website</h4>
-          <p>Personal portfolio showcasing projects, education & experience.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-------------------------- Footer -------------------------->
-  <footer class="footer">
-    <small class="message">Thanks for visiting and happy coding!</small>
-    <small class="copyright">&copy; 2024 Ayesha M. All rights reserved.</small>
+    <p>Thanks for visiting my portfolio!</p>
+    <small>&copy; 2024 Ayesha M. All rights reserved.</small>
   </footer>
 </body>
 </html>
