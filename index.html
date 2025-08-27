@@ -8,19 +8,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <!-------------------- Navbar -------------------->
+  <!-- Navbar -->
   <header class="header-area">
-    <div class="container">
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+    </nav>
   </header>
 
-  <!-------------------- Hero Section -------------------->
+  <!-- Hero Section -->
   <section class="FirstElement" id="home">
     <div class="profile-photo">
       <img src="AyeshaM.jpg" alt="Ayesha M">
@@ -29,7 +27,7 @@
       <h5>Hello, I’m</h5>
       <h1>Ayesha M</h1>
       <p>
-        A Software Engineer with 1.8 years of IT experience specializing in Angular, HTML, SCSS, and Bootstrap.
+        Software Engineer with 1.8 years of IT experience specializing in Angular, HTML, SCSS, and Bootstrap.
         Hands-on expertise in user-friendly applications and dashboards. Experienced in SQL, Power BI, and Tableau
         for data analysis and visualization. Passionate about solving problems, creating impactful solutions,
         and continuously learning new technologies.
@@ -45,21 +43,18 @@
     </div>
   </section>
 
-  <!-------------------- About Section -------------------->
+  <!-- About Section -->
   <section class="section-card" id="about">
     <div class="about">
-      <!-- Left: Paragraph -->
       <div class="about-content">
-        <h2 style="color:#fed700;">About Me</h2>
+        <h2 class="section-title">About Me</h2>
         <p>
-          Software Engineer with 1.8 years of IT experience in Angular, HTML, SCSS, and Bootstrap.  
-          Experienced in creating dashboards and reports using Power BI and Tableau.  
-          Strong SQL skills for data analysis and business reporting.  
+          Software Engineer with 1.8 years of IT experience in Angular, HTML, SCSS, and Bootstrap.
+          Experienced in creating dashboards and reports using Power BI and Tableau.
+          Strong SQL skills for data analysis and business reporting.
           Passionate about problem-solving, continuous learning, and building scalable applications.
         </p>
       </div>
-
-      <!-- Right: Details -->
       <div class="about-skills">
         <ul>
           <li><b>Name:</b> Ayesha M</li>
@@ -72,8 +67,9 @@
     </div>
   </section>
 
-  <!-------------------- Education -------------------->
+  <!-- Education Section -->
   <section class="section-card" id="education">
+    <h2 class="section-title">Education & Experience</h2>
     <div class="edu-grid">
       <div class="edu-col">
         <h3>Education</h3>
@@ -93,23 +89,66 @@
     </div>
   </section>
 
-  <!-------------------- Projects -------------------->
+  <!-- Projects Section -->
   <section class="section-card" id="projects">
     <h2 class="project-title">MY PROJECTS</h2>
-    <p class="subtitle">Angular, SQL, Power BI, and Tableau Projects</p>
+    <p class="subtitle">Angular, MERN, SQL, Python, Power BI, and Tableau Projects</p>
 
+    <!-- Angular -->
+    <h3 class="category">Angular Projects</h3>
     <div class="projects">
-      <div class="project"><h4>Notes App With Authentication</h4><p>Built using Angular & Local Storage with login, signup, and notes management features.</p></div>
-      <div class="project"><h4>Student Profile Management System</h4><p>Manages student personal, educational, and course details using Angular.</p></div>
-      <div class="project"><h4>Blog Management App</h4><p>CRUD operations for blogs with a clean UI built in Angular.</p></div>
-      <div class="project"><h4>E-Commerce Store</h4><p>Angular e-commerce app with product catalog, cart, and order management.</p></div>
-      <div class="project"><h4>Amazon Sales Analysis</h4><p>Analyzed sales dataset using SQL queries to generate revenue insights.</p></div>
-      <div class="project"><h4>HR Analytics Dashboard</h4><p>Interactive Tableau dashboard analyzing employee attrition & performance.</p></div>
-      <div class="project"><h4>Student Performance Dashboard</h4><p>Power BI dashboard to analyze student scores, attendance, and trends.</p></div>
+      <div class="project"><h4>Notes App With Authentication</h4><p>Login, signup, and notes management using Angular & Local Storage.</p></div>
+      <div class="project"><h4>Student Profile Management System</h4><p>Manage student personal, educational, and course details.</p></div>
+      <div class="project"><h4>Blog Management App</h4><p>CRUD operations with Angular clean UI.</p></div>
+      <div class="project"><h4>E-Commerce Store</h4><p>Angular store with catalog, cart & orders.</p></div>
+      <div class="project"><h4>Expense Tracker Dashboard</h4><p>Track daily expenses using Angular & TypeScript.</p></div>
+      <div class="project"><h4>Calculator App</h4><p>Simple calculator app in Angular.</p></div>
+    </div>
+
+    <!-- MERN -->
+    <h3 class="category">MERN Projects</h3>
+    <div class="projects">
+      <div class="project"><h4>MERN GitRepos App</h4><p>Fetch GitHub repos with MERN stack.</p></div>
+      <div class="project"><h4>MERN Profile App</h4><p>User profile management system.</p></div>
+      <div class="project"><h4>MERN Blogging App</h4><p>Blog CRUD with MERN.</p></div>
+      <div class="project"><h4>MERN Notes Manager</h4><p>Notes management with authentication.</p></div>
+      <div class="project"><h4>MERN Task Manager</h4><p>Task manager with full CRUD support.</p></div>
+    </div>
+
+    <!-- Python -->
+    <h3 class="category">Python Projects</h3>
+    <div class="projects">
+      <div class="project"><h4>Note Taking App</h4><p>Manage notes with Python.</p></div>
+      <div class="project"><h4>Product List</h4><p>Simple product listing app.</p></div>
+      <div class="project"><h4>Task Manager</h4><p>CLI task manager in Python.</p></div>
+      <div class="project"><h4>Personal Expense Tracker</h4><p>Track expenses with Python app.</p></div>
+    </div>
+
+    <!-- SQL -->
+    <h3 class="category">SQL Projects</h3>
+    <div class="projects">
+      <div class="project"><h4>Amazon Ecommerce Sales Analysis</h4><p>SQL queries for revenue insights.</p></div>
+      <div class="project"><h4>Coursera Course Data Analysis</h4><p>SQL analysis of course dataset.</p></div>
+      <div class="project"><h4>Library Usage Analysis</h4><p>Usage trends using SQL queries.</p></div>
+      <div class="project"><h4>Blinkit Sales Analysis</h4><p>Analyzed Blinkit dataset using SQL.</p></div>
+    </div>
+
+    <!-- Power BI -->
+    <h3 class="category">Power BI Projects</h3>
+    <div class="projects">
+      <div class="project"><h4>Student Performance Dashboard</h4><p>Analyzes student scores, trends & attendance.</p></div>
+      <div class="project"><h4>Sales Overview Dashboard</h4><p>Revenue breakdown using Power BI.</p></div>
+    </div>
+
+    <!-- Tableau -->
+    <h3 class="category">Tableau Projects</h3>
+    <div class="projects">
+      <div class="project"><h4>Airline Passenger Satisfaction</h4><p>Analyzes airline satisfaction trends.</p></div>
+      <div class="project"><h4>HR Analytics Dashboard</h4><p>Attrition & performance analytics.</p></div>
     </div>
   </section>
 
-  <!-------------------- Footer -------------------->
+  <!-- Footer -->
   <footer class="footer">
     <p>Thanks for visiting my portfolio!</p>
     <small>&copy; 2024 Ayesha M. All rights reserved.</small>
