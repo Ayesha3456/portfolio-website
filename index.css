@@ -89,19 +89,26 @@ body {
   font-size: 1.4rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .FirstElement {
-    flex-direction: column;
-    text-align: center;
-  }
-  .profile-text h1 {
-    font-size: 2.2rem;
-  }
-  .profile-text h5 {
-    font-size: 1rem;
-  }
-}  gap: 2rem;
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 3rem 2rem;
+}
+.about-skills {
+  flex: 1;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+/* Education */
+.edu-grid {
+  display: flex;
+  gap: 2rem;
   padding: 3rem 2rem;
   flex-wrap: wrap;
 }
@@ -130,9 +137,9 @@ body {
 }
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 .project {
   background: #111;
@@ -148,11 +155,11 @@ body {
   transform: translateY(-5px);
 }
 .project h4 {
-  color: #fff;
+  color: #fed700;
   margin-bottom: 10px;
 }
 .project p {
-  color: #aaa;
+  color: #ccc;
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -180,9 +187,6 @@ body {
   }
   .about {
     flex-direction: column;
-  }
-  .about-skills {
-    width: 100%;
   }
   .edu-grid {
     flex-direction: column;
