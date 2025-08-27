@@ -13,7 +13,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid #333;
 }
 .navbar {
   display: flex;
@@ -31,9 +30,9 @@ body {
   color: #fed700;
 }
 
-/* Section Cards */
+/* Section Card */
 .section-card {
-  background: #111;
+  background: rgba(20, 20, 20, 0.6);
   border-radius: 12px;
   padding: 3rem 2rem;
   margin: 2rem auto;
@@ -48,6 +47,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 4rem 2rem;
   gap: 3rem;
 }
 .profile-photo img {
@@ -60,6 +60,7 @@ body {
 .profile-text {
   flex: 1;
   max-width: 600px;
+  text-align: left;
 }
 .profile-text h5 {
   font-size: 1.3rem;
@@ -105,27 +106,32 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
+  align-items: flex-start;
+}
+.about-content {
+  flex: 2;
 }
 .about-skills {
   flex: 1;
-  background: #222;
+  background: rgba(30, 30, 30, 0.5);
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #333;
 }
 
-/* Education */
+/* Education Section */
 .edu-grid {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
 }
 .edu-col {
-  flex: 1;
-  background: #222;
+  flex: 1 1 calc(33.333% - 1.5rem);
+  background: #111;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #333;
+  min-width: 280px;
 }
 .edu-col h3 {
   color: #fed700;
@@ -145,17 +151,17 @@ body {
 }
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 1rem 0;
 }
 .project {
-  background: #222;
+  background: #111;
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #333;
   transition: all 0.3s ease;
-  min-height: 160px;
+  min-height: 180px;
 }
 .project:hover {
   border-color: #fed700;
@@ -163,11 +169,11 @@ body {
   transform: translateY(-5px);
 }
 .project h4 {
-  color: #fed700;
+  color: #fff;
   margin-bottom: 10px;
 }
 .project p {
-  color: #ccc;
+  color: #aaa;
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -190,13 +196,13 @@ body {
   .profile-text h1 {
     font-size: 2.2rem;
   }
-  .profile-text h5 {
-    font-size: 1rem;
-  }
   .about {
     flex-direction: column;
   }
-  .edu-grid {
-    flex-direction: column;
+  .about-content, .about-skills {
+    width: 100%;
+  }
+  .edu-col {
+    flex: 1 1 100%;
   }
 }
