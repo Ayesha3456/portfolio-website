@@ -30,15 +30,11 @@ body {
   color: #fed700;
 }
 
-/* Section Card */
+/* Section */
 .section-card {
-  background: rgba(20, 20, 20, 0.6);
-  border-radius: 12px;
   padding: 3rem 2rem;
   margin: 2rem auto;
   max-width: 1100px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  border: 1px solid #333;
 }
 
 /* Hero Section */
@@ -113,10 +109,14 @@ body {
 }
 .about-skills {
   flex: 1;
-  background: rgba(30, 30, 30, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #333;
+  background: none;
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+}
+.about h2 {
+  color: #fed700;
+  margin-bottom: 1rem;
 }
 
 /* Education Section */
@@ -127,15 +127,17 @@ body {
 }
 .edu-col {
   flex: 1 1 calc(33.333% - 1.5rem);
-  background: #111;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #333;
+  background: none;
+  padding: 10px;
+  border-radius: 0;
+  border: none;
   min-width: 280px;
 }
 .edu-col h3 {
   color: #fed700;
   margin-bottom: 1rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
 }
 
 /* Projects */
@@ -159,12 +161,11 @@ body {
   background: #111;
   padding: 20px;
   border-radius: 12px;
-  border: 1px solid #333;
+  border: none;
   transition: all 0.3s ease;
-  min-height: 180px;
+  min-height: 160px;
 }
 .project:hover {
-  border-color: #fed700;
   box-shadow: 0 0 12px rgba(254, 215, 0, 0.4);
   transform: translateY(-5px);
 }
